@@ -15,8 +15,8 @@ import cn.org.rapid_framework.generator.provider.db.table.model.Column.EnumMetaD
 
 /**
  * 
- * @author badqiu
- * @email badqiu(a)gmail.com
+ * @author 
+ * @email (a)gmail.com
  */
 public class StringHelper {
 	

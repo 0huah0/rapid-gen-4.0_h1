@@ -89,7 +89,7 @@ public abstract class NamedParameterUtils {
 				i = skipToPosition;
 			}
 			char c = statement[i];
-			// || c == '#' || c == '$' add by badqiu
+			// || c == '#' || c == '$' add by 
 			if (c == ':' || c == '&' || c == '#' || c == '$') {
 				int j = i + 1;
 				if (j < statement.length && statement[j] == ':' && c == ':') {
@@ -107,7 +107,7 @@ public abstract class NamedParameterUtils {
 						namedParameterCount++;
 					}
 					
-					String removedPrefixAndSuffixParameter = removePrefixAndSuffix(c,parameter,sql); //add by badqiu
+					String removedPrefixAndSuffixParameter = removePrefixAndSuffix(c,parameter,sql); //add by 
 					
 					parsedSql.addNamedParameter(removedPrefixAndSuffixParameter,c+parameter, i, j);
 					totalParameterCount++;
@@ -128,7 +128,7 @@ public abstract class NamedParameterUtils {
 		return parsedSql;
 	}
 
-	//add by badqiu,增加是否需要强制要有#后缀用于ibatis2
+	//add by ,增加是否需要强制要有#后缀用于ibatis2
 	private static String removePrefixAndSuffix(char startPrifix,String parameter,String sql) {
 		//for spring jdbc
 		if(startPrifix == ':' || startPrifix == '&') {

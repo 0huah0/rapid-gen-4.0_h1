@@ -17,8 +17,8 @@ import java.util.List;
 import java.util.Set;
 /**
  * 
- * @author badqiu
- * @email badqiu(a)gmail.com
+ * @author 
+ * @email (a)gmail.com
  */
 public class FileHelper {
 	/**

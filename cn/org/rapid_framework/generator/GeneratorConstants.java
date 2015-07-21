@@ -2,7 +2,7 @@ package cn.org.rapid_framework.generator;
 /**
  * 生成器常量,用于统一存放生成器可以配置的常量
  * 
- * @author badqiu
+ * @author 
  *
  */
 public enum GeneratorConstants {

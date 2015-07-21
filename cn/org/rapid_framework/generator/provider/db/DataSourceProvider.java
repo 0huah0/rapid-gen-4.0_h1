@@ -19,7 +19,7 @@ import cn.org.rapid_framework.generator.util.StringHelper;
 /**
  * 用于提供生成器的数据源
  * 
- * @author badqiu
+ * @author 
  *
  */
 public class DataSourceProvider {

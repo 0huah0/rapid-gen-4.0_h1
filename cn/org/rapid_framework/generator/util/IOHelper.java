@@ -17,8 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 /**
  * 
- * @author badqiu
- * @email badqiu(a)gmail.com
+ * @author 
+ * @email (a)gmail.com
  */
 public class IOHelper {
 	public static Writer NULL_WRITER = new NullWriter();

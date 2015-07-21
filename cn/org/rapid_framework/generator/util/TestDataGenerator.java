@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 
 /**
  * 
- * @author badqiu
+ * @author 
  *
  */
 public class TestDataGenerator {

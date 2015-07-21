@@ -14,7 +14,7 @@ import cn.org.rapid_framework.generator.util.IOHelper;
 import cn.org.rapid_framework.generator.util.StringHelper;
 /**
  * get parameter names from java source file
- * @author badqiu
+ * @author 
  */
 public class JavaSourceParanamer implements Paranamer{
     private ClassLoader classLoader;

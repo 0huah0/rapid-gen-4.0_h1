@@ -38,7 +38,7 @@ import org.xml.sax.SAXException;
  * <pre>
  *     NodeData nd = XMLHelper.parseXML(inputStream)
  * </pre>
- * @author badqiu
+ * @author 
  */
 public class XMLHelper {
 
@@ -283,7 +283,7 @@ public class XMLHelper {
     
     /**
      * 解析attributes为hashMap
-     * @param attributes 格式： name='badqiu' sex='F'
+     * @param attributes 格式： name='' sex='F'
      * @return
      */
     public static LinkedHashMap<String, String> parse2Attributes(String attributes) {

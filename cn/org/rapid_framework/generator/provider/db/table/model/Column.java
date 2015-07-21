@@ -17,8 +17,8 @@ import cn.org.rapid_framework.generator.util.typemapping.JdbcType;
 
 /**
  * 用于生成代码的Columb对象.对应数据库表column
- * @author badqiu
- * @email badqiu(a)gmail.com
+ * @author 
+ * @email (a)gmail.com
  */
 public class Column implements java.io.Serializable,Cloneable{
 	/**
@@ -677,7 +677,7 @@ public class Column implements java.io.Serializable,Cloneable{
 	 * 		private String key;
 	 * 		private String value;
 	 * }
-	 * @author badqiu
+	 * @author 
 	 */
 	public static class EnumMetaDada {
 		private String enumAlias;

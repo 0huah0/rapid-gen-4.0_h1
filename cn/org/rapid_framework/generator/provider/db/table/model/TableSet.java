@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * 包含一组 Table对象的容器类
- * @author badqiu
+ * @author 
  *
  */
 public class TableSet implements java.io.Serializable{

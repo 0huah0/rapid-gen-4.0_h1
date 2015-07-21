@@ -43,7 +43,7 @@ import cn.org.rapid_framework.generator.util.typemapping.JdbcType;
  * Sql sql = new SqlFactory().parseSql("select * from user_info where username=#username# and password=#password#");
  * </pre>
  * 
- * @author badqiu
+ * @author 
  *
  */
 public class SqlFactory {

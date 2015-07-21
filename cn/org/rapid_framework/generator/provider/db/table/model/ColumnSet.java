@@ -8,7 +8,7 @@ import java.util.List;
 import cn.org.rapid_framework.generator.util.StringHelper;
 /**
  * 包含一组Column对象的容器类
- * @author badqiu
+ * @author 
  *
  */
 public class ColumnSet implements java.io.Serializable{

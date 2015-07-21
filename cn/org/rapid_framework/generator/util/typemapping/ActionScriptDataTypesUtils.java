@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * 描述java类型和as类型对应关系
  * 
- * @author Linlin Yu,badqiu
+ * @author Linlin Yu,
  */
 public class ActionScriptDataTypesUtils {
 

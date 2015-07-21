@@ -28,7 +28,7 @@ import cn.org.rapid_framework.generator.util.StringHelper;
  * 生成器的主要入口类,包装相关方法供外部生成代码使用
  * 
  * 使用GeneratorFacade之前，需要设置Generator的相关属性
- * @author badqiu
+ * @author 
  *
  */
 public class GeneratorFacade  {

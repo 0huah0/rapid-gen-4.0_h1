@@ -210,7 +210,7 @@ public class ForeignKey implements java.io.Serializable{
 	
 	/**
 	 * 外键引用使用的值对象
-	 * @author badqiu
+	 * @author 
 	 *
 	 */
 	public static class ReferenceKey implements java.io.Serializable{

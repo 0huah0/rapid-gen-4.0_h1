@@ -3,7 +3,7 @@ package cn.org.rapid_framework.generator.util.typemapping;
 import java.sql.Types;
 /**
  * 用于ibatis的JdbcType
- * @author badqiu
+ * @author 
  */
 public enum JdbcType {
 

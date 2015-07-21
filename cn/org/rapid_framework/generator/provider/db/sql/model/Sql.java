@@ -34,7 +34,7 @@ import cn.org.rapid_framework.generator.util.typemapping.JavaPrimitiveTypeMappin
  * </pre>
  * 
  * @see SqlFactory
- * @author badqiu
+ * @author 
  *
  */
 public class Sql {

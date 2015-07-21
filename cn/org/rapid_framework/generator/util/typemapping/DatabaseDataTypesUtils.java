@@ -5,8 +5,8 @@ import java.sql.Types;
 import java.util.HashMap;
 /**
  * 
- * @author badqiu
- * @email badqiu(a)gmail.com
+ * @author 
+ * @email (a)gmail.com
  */
 public class DatabaseDataTypesUtils {
 

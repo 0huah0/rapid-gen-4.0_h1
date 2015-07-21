@@ -3,7 +3,7 @@ package cn.org.rapid_framework.generator.provider.db.table;
 import cn.org.rapid_framework.generator.provider.db.table.model.Table;
 /**
  * TableFactory的监听器,可以拦截TableFactory的相关事件
- * @author badqiu
+ * @author 
  *
  */
 public interface TableFactoryListener {

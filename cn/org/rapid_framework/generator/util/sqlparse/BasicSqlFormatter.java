@@ -35,7 +35,7 @@ import java.util.StringTokenizer;
  *
  * @author Gavin King
  * @author Steve Ebersole
- * @author badqiu modify commaAfterByOrFromOrSelect() comments newline()
+ * @author  modify commaAfterByOrFromOrSelect() comments newline()
  */
 public class BasicSqlFormatter {
 

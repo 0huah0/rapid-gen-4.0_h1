@@ -24,7 +24,7 @@ import cn.org.rapid_framework.generator.util.typemapping.JavaImport;
 
 /**
  * 
- * @author badqiu,Linlin Yu
+ * @author ,Linlin Yu
  */
 public class JavaMethod {
 	Method method;
