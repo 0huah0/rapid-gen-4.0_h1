@@ -1,0 +1,829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>最适合实际开发需要的:&lt;代码生成器&gt;发布:rapid-generator-v1.0 - Java - ITeye论坛</title>
+    <meta name="description" content="现阶段内置模板可以生成的包括: 可以生成java的hibernat model+annotation,hibernate model+xml,dao,manager,struts+struts2 action类 生成jsp的增删改查.  (生成的代码与rapid-framework绑定才比较有意义)   通常代码生成器存在的问题. 二次开发困难  过于智能,自动插入我们的项目中,程序员还需考虑旧的代 ..." />
+    <meta name="keywords" content=" Java" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link href="/rss/board/Java" rel="alternate" title="ITeye论坛" type="application/rss+xml" />
+    <link rel="search" type="application/opensearchdescription+xml" href="/open_search.xml" title="ITeye" />
+    <link href="http://www.iteye.com/stylesheets/forum.css?1436434732" media="screen" rel="stylesheet" type="text/css" />
+    <script src="http://www.iteye.com/javascripts/application.js?1358214518" type="text/javascript"></script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-535605-1']);
+  _gaq.push(['_setDomainName', 'iteye.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+      <link href="http://www.iteye.com/javascripts/syntaxhighlighter/SyntaxHighlighter.css?1348819953" media="screen" rel="stylesheet" type="text/css" />
+  <script src="http://www.iteye.com/javascripts/syntaxhighlighter/shCoreCommon.js?1325907333" type="text/javascript"></script>
+<script src="http://www.iteye.com/javascripts/hotkey.js?1324994303" type="text/javascript"></script>
+  <script src="http://www.iteye.com/javascripts/code_favorites.js?1358214518" type="text/javascript"></script>
+          <script src="http://www.iteye.com/javascripts/dragdrop.js?1324994303" type="text/javascript"></script>
+          </head>
+  <body>
+    <div id="page">
+      <div id="header">
+        <div class="clearfix"><div id="user_nav">
+      <a href="/login" class="welcome" title="登录">您还未登录 !</a>
+    <a href="/login">登录</a>
+    <a href="/signup" class="nobg">注册</a>
+  </div>
+</div>
+        <div class="clearfix">
+          <div id="branding">
+            <a href="http://www.iteye.com"><img alt="ITeye-最棒的软件开发交流社区" src="http://www.iteye.com/images/logo.gif?1324994303" title="ITeye-最棒的软件开发交流社区" /></a>
+          </div>
+          <div id="gg"><IFRAME SRC="/iframe_ggbd/942" SCROLLING=no WIDTH=728 HEIGHT=90 FRAMEBORDER=0></IFRAME></div>
+        </div>
+      </div>
+
+      <div id="content" class="clearfix">
+        <div id="main">
+          
+
+
+
+          
+
+<div class="h-entry" style='display:none'>
+  <a href="http://badqiu.iteye.com" class="p-author" target="_blank">badqiu</a>
+</div>
+
+
+<div class="clearfix">
+  <div class="crumbs">
+    <a href="/forums">论坛首页</a> <span class="arrow">&rarr;</span>
+    <a href="/forums/board/Java">Java企业应用论坛</a> <span class="arrow">&rarr;</span>
+    <h1>最适合实际开发需要的:&lt;代码生成器&gt;发布:rapid-generator-v1.0</h1>
+  </div>
+</div>
+
+
+  <div id="forum_tag_list">
+    <a href="/forums/board/Java">全部</a>
+          <a href='/forums/tag/Hibernate'>Hibernate</a>
+          <a href='/forums/tag/Spring'>Spring</a>
+          <a href='/forums/tag/Struts'>Struts</a>
+          <a href='/forums/tag/iBATIS'>iBATIS</a>
+          <a href='/forums/tag/企业应用'>企业应用</a>
+          <a href='/forums/tag/Lucene'>Lucene</a>
+          <a href='/forums/tag/SOA'>SOA</a>
+              <a href="/forums/tag/Java%E7%BB%BC%E5%90%88">Java综合</a>
+          <a href="/forums/tag/Tomcat">Tomcat</a>
+          <a href="/forums/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F">设计模式</a>
+          <a href="/forums/tag/OO">OO</a>
+          <a href="/forums/tag/JBoss">JBoss</a>
+      </div>
+
+
+<div class="actions">
+  <div class="buttons"></div>
+  <div class="wrapper">
+    <div id="forum_recommended_f4"><!--AdForward Begin:-->
+<script type="text/javascript" ads-src="http://csdnim.allyes.com/main/s?user=iteye|forums|banner3&db=csdnim&border=0&local=yes&js=ie" src="http://creatim.allyes.com.cn/td/AllyesDeliver.min.js" charset="gbk"></script>
+<!--AdForward End--></div>
+    
+    <div class="info">浏览 6427 次</div>
+  </div>
+</div>
+
+
+
+<table id="forum_main" cellspacing="1">
+  <thead>
+    <tr>
+      <th colspan="2" class="topic_title">
+        <div class="wrapper"><span class='locked'>锁定老帖子</span> <a href="/topic/217423">主题：最适合实际开发需要的:&lt;代码生成器&gt;发布:rapid-generator-v1.0</a></div>
+        <div id='topic_rate_box'>精华帖 (0) :: 良好帖 (0) :: 新手帖 (0) :: 隐藏帖 (0)</div>
+      </th>
+    </tr>
+    <tr>
+      <td class="first_col">作者</td>
+      <td class="last_col">正文
+      
+      </td>
+    </tr>
+  </thead>
+  <tbody id="posts">
+    <tr id="606836">
+  <td class="postauthor">
+    <ul>
+      <li class="name">badqiu</li>
+      <li>等级: <img src="/images/star3.gif" alt="三星会员" title="三星会员"/></li>
+      <li><a href='http://badqiu.iteye.com' target='_blank'><img alt="badqiu的博客" class="logo" src="http://www.iteye.com/upload/logo/user/19652/c33e91ec-b367-47b3-98ed-755c0628471a.gif?1236832477" title="badqiu的博客: badqiu" width="" /></a></li>
+      <li>性别: <img src="/images/icon_minigender_1.gif" title="男"/></li>      <li>文章: 213</li>
+      <li>积分: 360</li>
+      <li>来自: 珠海</li>
+      <li><img src='/images/status/offline.gif'/></li>
+    </ul>
+  </td>
+  <td class="postcontent">
+    <div class="postactions">
+      <div class="description">
+        &nbsp;&nbsp;
+        发表时间：2008-07-22&nbsp;&nbsp;
+        
+      </div>
+      <div class="links">
+        
+        
+          
+          
+        
+      </div>
+    </div>
+    <div class="postbody clearfix">
+      
+        
+              <script type="text/javascript">
+      var hunters = ["\u003Ca href='/jobs/2509' target='_blank' style='color:#000;'\u003E\u003Cspan style='font-weight:bold;'\u003E\u4e0a\u6d77: \u003C/span\u003E Junior Product Manager\u003C/a\u003E","\u003Ca href='/jobs/2508' target='_blank' style='color:#000;'\u003E\u003Cspan style='font-weight:bold;'\u003E\u4e0a\u6d77: \u003C/span\u003E Senior Software Engineer\u003C/a\u003E"]
+      var hunter_id = Math.ceil(Math.random() * hunters.length) - 1;
+      if(hunter_id == -1) hunter_id = 0;
+    </script>
+    <div id="hunter_recommended" style="background:#fff;border: 1px solid #ccc; padding: 4px;margin-bottom: 10px;">
+      <span id="hunters_nav" style="margin-right:5px;">
+        <a href="#" onclick="hunter_id <= 0 ? hunter_id = hunters.length - 1 : hunter_id--; $('hunters').update(hunters[hunter_id]);return false;" style="border:1px solid #ccc;padding: 0 3px;size: 13px;text-decoration: none;">&lt;</a>
+        <a href="#" onclick="hunter_id >= hunters.length - 1 ? hunter_id = 0 : hunter_id++; $('hunters').update(hunters[hunter_id]);return false;" style="border:1px solid #ccc;padding: 0 3px;size :13px;text-decoration: none;">&gt;</a>
+      </span>
+      猎头职位: <span id="hunters"></span>
+      <script type="text/javascript">$('hunters').update(hunters[hunter_id]);</script>
+    </div>
+
+        
+      
+                                            <div id="related_topics">相关文章: <span class="close"><a href="#" onclick="$('related_topics').hide();if($('hunter_recommended')){$('hunter_recommended').style.width='780px'};if($('topic_tags')){$('topic_tags').style.width='790px'};return false;" title="关闭">&nbsp;</a></span>
+              <ul>
+                                  <li><a href='http://www.iteye.com/topic/212881' title='为何代码生成器都要这么智能呢?' target='_blank'>为何代码生成器都要这么智能呢?</a></li>
+                                  <li><a href='http://www.iteye.com/topic/664245' title='Extjs3综合应用(待续v4...初版)' target='_blank'>Extjs3综合应用(待续v4...初版)</a></li>
+                                  <li><a href='http://www.iteye.com/topic/605629' title='自动代码生成工具的那几步' target='_blank'>自动代码生成工具的那几步</a></li>
+                              </ul>
+              <br/><span>推荐群组: <a href="http://rapidframework.group.iteye.com" target="_blank">rapid-framework</a></span>
+              <br/><a href="/wiki/topic/217423" target="_blank">更多相关推荐</a>
+            </div>
+            <script type="text/javascript">
+              document.observe("dom:loaded", function() {
+                if($('hunter_recommended')) {
+                  $('hunter_recommended').setStyle({cssFloat: 'left', width: '557px'})
+                }
+                if($('topic_tags')) {
+                  $('topic_tags').setStyle({width: '567px'})
+                }
+                new Draggable("related_topics");
+              });
+            </script>
+                          
+      
+      <h2>现阶段内置模板可以生成的包括:</h2>
+<p>可以生成java的hibernat model+annotation,hibernate model+xml,dao,manager,struts+struts2 action类</p>
+<p>生成jsp的增删改查.  (生成的代码与rapid-framework绑定才比较有意义)</p>
+<p> </p>
+<h2>通常代码生成器存在的问题.</h2>
+<ul>
+<li>二次开发困难 </li>
+<li>过于智能,自动插入我们的项目中,程序员还需考虑旧的代码会不会被覆盖的问题 </li>
+<li>没有将存放模板的目录名称及文件名称利用起来,导致还需配置每个模板文件生成的文件名,目录结构<br />具体请查看我写的文章:<span class="nobr"><a href="../../blog/212881">为何代码生成器都要这么智能呢?<sup><img alt="" class="rendericon" src="../../images/icons/linkext7.gif" width="7" border="0" height="7" /></sup></a></span> </li>
+</ul>
+<h2>本代码生成器的特性</h2>
+<ul>
+<li>基于<span class="nobr"><a href="http://freemarker.sourceforge.net/">FreeMarker<sup><img alt="" class="rendericon" src="../../images/icons/linkext7.gif" width="7" border="0" height="7" /></sup></a></span>模板语言 </li>
+<li>基于数据库,并支持多种数据库(mysql,sql server,oracle测试通过) </li>
+<li>半手工方式,生成的代码放在某个目录,再手工拷贝回来工作区 </li>
+<li>易于做二次开发,整个生成器本身就是java源代码,源代码核心十分精简,并且鼓励你做修改代码,也可以作为任何语言的代码生成器 </li>
+<li>配置简单,只有一个配置文件generator.properties </li>
+<li>以application方式运行生成器,生成不同的table直接修改相关java代码即可 </li>
+<li>将文件系统的目录名称及文件名称作为生成器的一部分,模板文件的的名称与目录名称可以直接引用相关变量,如 <strong><span style="color: #000000;">${basepackage}/</span><span style="color: #ff0000;">${className}.</span><span style="color: #ff0000;">java</span></strong>  (${className}=Blog,则会生成Blog.java) </li>
+<li>以@testExpression结尾的模板文件为有条件忽略,如果testExpression的值在数据模型为true则生成该文件,生成的文件不会包含@testExpression,反之则不生成该文件(应用场景:用于在是否要生成hibernate联合主建的文件中) </li>
+<li>支持文件插入操作,如模板输出生成的地方已经有该同名的文件存在,并且文件中有包含"webapp-generator-insert-location"标记,则模板生成的内容会插入在该标记之后.该特性对如生成的spring配置内容插入spring配置文件十分有用 </li>
+</ul>
+<h2>代码生成器的运行</h2>
+<ul>
+<li>将generator_lib中的jar加入classpath,generator_lib自带了几种常用jdbc驱动</li>
+<li>修改generator.properties的数据库连接属性及其它属性 </li>
+<li>以application的方式运行GeneratorMain类,要生成不同的table,直接修改代码即可 </li>
+</ul>
+<pre name="code" class="java">public class GeneratorMain {
+	public static void main(String[] args) throws Exception {
+		Generator g = new Generator();
+		
+		g.clean();
+		g.generateTable("blog");
+//		g.generateAllTable();
+	}
+}</pre>
+<p> </p>
+<h2>代码template目录结构</h2>
+<p><img alt="代码模板目录" src="http://wiki.javascud.org/download/attachments/5799976/generator_template.png" width="462" height="409" /></p>
+<p> </p>
+<p> </p>
+<p>项目下载: <a href="http://code.google.com/p/rapid-generator/downloads/list">http://code.google.com/p/rapid-generator/downloads/list</a></p>
+<p>项目HOME: <a href="http://code.google.com/p/rapid-generator">http://code.google.com/p/rapid-generator</a></p>
+<p>本生成器也将作为<a href="http://code.google.com/p/rapid-framework/">rapid-framework</a>的一部分,即将发布,敬请关注.</p>
+<p> </p>
+<p>并且欢迎大家加入讨论组:<a href="http://rapidframework.group.iteye.com/"><img alt="" src="http://rapidframework.group.iteye.com/upload/logo/group/31719/20af829f-5b8a-39b3-a39e-894fd44a6e2f-thumb.png" width="48" height="27" /></a></p>
+    </div>
+    
+
+          <div id="topic_copyright">声明：ITeye文章版权属于作者，受法律保护。没有作者书面许可不得转载。 </div>
+      <div id="forum_recommended_f5"><span>推荐链接</span><ul><li><!--AdForward Begin:-->
+<script type="text/javascript" ads-src="http://csdnim.allyes.com/main/s?user=iteye|forums|banner4&db=csdnim&border=0&local=yes&js=ie" src="http://creatim.allyes.com.cn/td/AllyesDeliver.min.js" charset="gbk"></script>
+<!--AdForward End--></li></ul></div>
+              <div id="forum_recommended_f0"><IFRAME SRC="/iframe_ggbd/155" SCROLLING=no WIDTH=728 HEIGHT=90 FRAMEBORDER=0></IFRAME></div>
+        </td>
+  </tr>
+  <tr>
+    <td class="postauthor"><a href="#">返回顶楼</a></td>
+    <td class="postcontent">
+      <div class="icons">
+        <a href='http://badqiu.iteye.com' class='icon_www' title='浏览作者的博客'>&nbsp;</a>
+        <a href='http://badqiu.iteye.com/blog/profile' class='icon_profile' title='浏览作者资料'>&nbsp;</a>
+        <a href="http://my.iteye.com/messages/new?message%5Breceiver_name%5D=badqiu" class="icon_pm" title="发送站内短信">&nbsp;</a>
+        <a href='http://badqiu.iteye.com/blog/guest_book' class='icon_guestbook' title='给作者留言'>&nbsp;</a>
+        <a href="http://my.iteye.com/feed?subscription%5Bsubscribed_user_name%5D=badqiu" class="icon_rss" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'fg+dl8+KS0u7NhRGQAmXdisB2EzBl1Qda/AvPoSZ14g='); f.appendChild(s);f.submit();return false;" title="关注作者">&nbsp</a>
+              </div>
+                    </td>
+</tr>
+<tr class="sep2"><td colspan="2"></td></tr>
+<tr id="608427">
+  <td class="postauthor">
+    <ul>
+      <li class="name">hanzaihua</li>
+      <li>等级: 初级会员</li>
+      <li><a href='http://hanzaihua.iteye.com' target='_blank'><img alt="hanzaihua的博客" class="logo" src="http://www.iteye.com/images/user-logo.gif?1324994303" title="hanzaihua的博客: hanzaihua" width="" /></a></li>
+            <li>文章: 2</li>
+      <li>积分: 30</li>
+      <li>来自: ...</li>
+      <li><img src='/images/status/offline.gif'/></li>
+    </ul>
+  </td>
+  <td class="postcontent">
+    <div class="postactions">
+      <div class="description">
+        &nbsp;&nbsp;
+        发表时间：2008-07-22&nbsp;&nbsp;
+        
+      </div>
+      <div class="links">
+        
+        
+          
+          
+          
+        
+      </div>
+    </div>
+    <div class="postbody clearfix">
+      
+      
+      非常感谢楼主，使用了这个框架生成了代码，还是比较清晰的，但编译时缺乏一些包，如：<br />import javacommon.util.*;<br />import javacommon.web.util.*;<br />import javacommon.base.*;<br />import javacommon.page.*;<br />import javacommon.page.impl.*;<br /><br />不知道在哪里下载，麻烦楼主解答下。<br /><br />另外，我之前我搞了这个一个项目，但只能生成页面，对你的模板设置或多数据库支持，非常佩服，向你致敬。
+    </div>
+    
+
+            </td>
+  </tr>
+  <tr>
+    <td class="postauthor"><a href="#">返回顶楼</a></td>
+    <td class="postcontent">
+      <div class="icons">
+        <a href='http://hanzaihua.iteye.com' class='icon_www' title='浏览作者的博客'>&nbsp;</a>
+        <a href='http://hanzaihua.iteye.com/blog/profile' class='icon_profile' title='浏览作者资料'>&nbsp;</a>
+        <a href="http://my.iteye.com/messages/new?message%5Breceiver_name%5D=hanzaihua" class="icon_pm" title="发送站内短信">&nbsp;</a>
+        <a href='http://hanzaihua.iteye.com/blog/guest_book' class='icon_guestbook' title='给作者留言'>&nbsp;</a>
+        <a href="http://my.iteye.com/feed?subscription%5Bsubscribed_user_name%5D=hanzaihua" class="icon_rss" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'fg+dl8+KS0u7NhRGQAmXdisB2EzBl1Qda/AvPoSZ14g='); f.appendChild(s);f.submit();return false;" title="关注作者">&nbsp</a>
+                  <a href="#608427" title="hanzaihua回帖:最适合实际开发需要的:&lt;代码生成器&gt;发布:rapid-generator-v1.0">回帖地址</a>
+              </div>
+                        <div id='post_rate_box_608427' class='post_rate_box'><a href='#' onclick='return false;' class='good' title='好'>1</a> <a href='#' onclick='return false;' class='hidden' title='差'>0</a> 请登录后投票</div>              </td>
+</tr>
+<tr class="sep2"><td colspan="2"></td></tr>
+<tr id="608442">
+  <td class="postauthor">
+    <ul>
+      <li class="name">acdc</li>
+      <li>等级: <img src="/images/star5.gif" alt="五星会员" title="五星会员"/></li>
+      <li><a href='http://acdc.iteye.com' target='_blank'><img alt="acdc的博客" class="logo" src="http://www.iteye.com/images/user-logo.gif?1324994303" title="acdc的博客: acdc" width="" /></a></li>
+      <li>性别: <img src="/images/icon_minigender_1.gif" title="男"/></li>      <li>文章: 121</li>
+      <li>积分: 581</li>
+      <li>来自: SH</li>
+      <li><img src='/images/status/offline.gif'/></li>
+    </ul>
+  </td>
+  <td class="postcontent">
+    <div class="postactions">
+      <div class="description">
+        &nbsp;&nbsp;
+        发表时间：2008-07-23&nbsp;&nbsp;
+        
+      </div>
+      <div class="links">
+        
+        
+          
+          
+          
+        
+      </div>
+    </div>
+    <div class="postbody clearfix">
+      
+      
+      一个问题: 代码生成器支持在生成代码上进行人工修改么? 如果人工修改了,再次生成的时候,能否保留那些人工修改痕迹?
+    </div>
+    
+
+            </td>
+  </tr>
+  <tr>
+    <td class="postauthor"><a href="#">返回顶楼</a></td>
+    <td class="postcontent">
+      <div class="icons">
+        <a href='http://acdc.iteye.com' class='icon_www' title='浏览作者的博客'>&nbsp;</a>
+        <a href='http://acdc.iteye.com/blog/profile' class='icon_profile' title='浏览作者资料'>&nbsp;</a>
+        <a href="http://my.iteye.com/messages/new?message%5Breceiver_name%5D=acdc" class="icon_pm" title="发送站内短信">&nbsp;</a>
+        <a href='http://acdc.iteye.com/blog/guest_book' class='icon_guestbook' title='给作者留言'>&nbsp;</a>
+        <a href="http://my.iteye.com/feed?subscription%5Bsubscribed_user_name%5D=acdc" class="icon_rss" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'fg+dl8+KS0u7NhRGQAmXdisB2EzBl1Qda/AvPoSZ14g='); f.appendChild(s);f.submit();return false;" title="关注作者">&nbsp</a>
+                  <a href="#608442" title="acdc回帖:最适合实际开发需要的:&lt;代码生成器&gt;发布:rapid-generator-v1.0">回帖地址</a>
+              </div>
+                        <div id='post_rate_box_608442' class='post_rate_box'><a href='#' onclick='return false;' class='good' title='好'>1</a> <a href='#' onclick='return false;' class='hidden' title='差'>0</a> 请登录后投票</div>              </td>
+</tr>
+<tr class="sep2"><td colspan="2"></td></tr>
+<tr id="608517">
+  <td class="postauthor">
+    <ul>
+      <li class="name">badqiu</li>
+      <li>等级: <img src="/images/star3.gif" alt="三星会员" title="三星会员"/></li>
+      <li><a href='http://badqiu.iteye.com' target='_blank'><img alt="badqiu的博客" class="logo" src="http://www.iteye.com/upload/logo/user/19652/c33e91ec-b367-47b3-98ed-755c0628471a.gif?1236832477" title="badqiu的博客: badqiu" width="" /></a></li>
+      <li>性别: <img src="/images/icon_minigender_1.gif" title="男"/></li>      <li>文章: 213</li>
+      <li>积分: 360</li>
+      <li>来自: 珠海</li>
+      <li><img src='/images/status/offline.gif'/></li>
+    </ul>
+  </td>
+  <td class="postcontent">
+    <div class="postactions">
+      <div class="description">
+        &nbsp;&nbsp;
+        发表时间：2008-07-23&nbsp;&nbsp;
+        
+      </div>
+      <div class="links">
+        
+        
+          
+          
+          
+        
+      </div>
+    </div>
+    <div class="postbody clearfix">
+      
+      
+      <div class="quote_title">hanzaihua 写道</div><div class="quote_div">非常感谢楼主，使用了这个框架生成了代码，还是比较清晰的，但编译时缺乏一些包，如：<br />import javacommon.util.*;<br />import javacommon.web.util.*;<br />import javacommon.base.*;<br />import javacommon.page.*;<br />import javacommon.page.impl.*;<br /><br />不知道在哪里下载，麻烦楼主解答下。<br /><br />另外，我之前我搞了这个一个项目，但只能生成页面，对你的模板设置或多数据库支持，非常佩服，向你致敬。</div><br /><br />rapid-generator现在的内置的模板是属于<a href="http://code.google.com/p/rapid-framework" target="_blank">rapid-framework</a>的一部分.不过rapid-generator可以作为独立的生成器，修改成适合你项目的.<br /><br />
+    </div>
+    
+
+            </td>
+  </tr>
+  <tr>
+    <td class="postauthor"><a href="#">返回顶楼</a></td>
+    <td class="postcontent">
+      <div class="icons">
+        <a href='http://badqiu.iteye.com' class='icon_www' title='浏览作者的博客'>&nbsp;</a>
+        <a href='http://badqiu.iteye.com/blog/profile' class='icon_profile' title='浏览作者资料'>&nbsp;</a>
+        <a href="http://my.iteye.com/messages/new?message%5Breceiver_name%5D=badqiu" class="icon_pm" title="发送站内短信">&nbsp;</a>
+        <a href='http://badqiu.iteye.com/blog/guest_book' class='icon_guestbook' title='给作者留言'>&nbsp;</a>
+        <a href="http://my.iteye.com/feed?subscription%5Bsubscribed_user_name%5D=badqiu" class="icon_rss" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'fg+dl8+KS0u7NhRGQAmXdisB2EzBl1Qda/AvPoSZ14g='); f.appendChild(s);f.submit();return false;" title="关注作者">&nbsp</a>
+                  <a href="#608517" title="badqiu回帖:最适合实际开发需要的:&lt;代码生成器&gt;发布:rapid-generator-v1.0">回帖地址</a>
+              </div>
+                        <div id='post_rate_box_608517' class='post_rate_box'><a href='#' onclick='return false;' class='good' title='好'>0</a> <a href='#' onclick='return false;' class='hidden' title='差'>2</a> 请登录后投票</div>              </td>
+</tr>
+<tr class="sep2"><td colspan="2"></td></tr>
+<tr id="611324">
+  <td class="postauthor">
+    <ul>
+      <li class="name">40020072</li>
+      <li>等级: 初级会员</li>
+      <li><a href='http://everlive.iteye.com' target='_blank'><img alt="40020072的博客" class="logo" src="http://www.iteye.com/upload/logo/user/28196/703ea9e9-ffdc-308a-857f-d202520bc9ed.jpg?1236833021" title="40020072的博客: 天青色等烟雨" width="" /></a></li>
+      <li>性别: <img src="/images/icon_minigender_1.gif" title="男"/></li>      <li>文章: 29</li>
+      <li>积分: 30</li>
+      <li>来自: 北京</li>
+      <li><img src='/images/status/offline.gif'/></li>
+    </ul>
+  </td>
+  <td class="postcontent">
+    <div class="postactions">
+      <div class="description">
+        &nbsp;&nbsp;
+        发表时间：2008-07-25&nbsp;&nbsp;
+        
+      </div>
+      <div class="links">
+        
+        
+          
+          
+          
+        
+      </div>
+    </div>
+    <div class="postbody clearfix">
+      
+      
+      想问一下楼主，rapid-framework大概什么时候发布呢，很期待啊，等3天了 ~
+    </div>
+    
+
+            </td>
+  </tr>
+  <tr>
+    <td class="postauthor"><a href="#">返回顶楼</a></td>
+    <td class="postcontent">
+      <div class="icons">
+        <a href='http://everlive.iteye.com' class='icon_www' title='浏览作者的博客'>&nbsp;</a>
+        <a href='http://everlive.iteye.com/blog/profile' class='icon_profile' title='浏览作者资料'>&nbsp;</a>
+        <a href="http://my.iteye.com/messages/new?message%5Breceiver_name%5D=40020072" class="icon_pm" title="发送站内短信">&nbsp;</a>
+        <a href='http://everlive.iteye.com/blog/guest_book' class='icon_guestbook' title='给作者留言'>&nbsp;</a>
+        <a href="http://my.iteye.com/feed?subscription%5Bsubscribed_user_name%5D=40020072" class="icon_rss" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'fg+dl8+KS0u7NhRGQAmXdisB2EzBl1Qda/AvPoSZ14g='); f.appendChild(s);f.submit();return false;" title="关注作者">&nbsp</a>
+                  <a href="#611324" title="40020072回帖:最适合实际开发需要的:&lt;代码生成器&gt;发布:rapid-generator-v1.0">回帖地址</a>
+              </div>
+                        <div id='post_rate_box_611324' class='post_rate_box'><a href='#' onclick='return false;' class='good' title='好'>0</a> <a href='#' onclick='return false;' class='hidden' title='差'>1</a> 请登录后投票</div>              </td>
+</tr>
+<tr class="sep2"><td colspan="2"></td></tr>
+<tr id="611539">
+  <td class="postauthor">
+    <ul>
+      <li class="name">badqiu</li>
+      <li>等级: <img src="/images/star3.gif" alt="三星会员" title="三星会员"/></li>
+      <li><a href='http://badqiu.iteye.com' target='_blank'><img alt="badqiu的博客" class="logo" src="http://www.iteye.com/upload/logo/user/19652/c33e91ec-b367-47b3-98ed-755c0628471a.gif?1236832477" title="badqiu的博客: badqiu" width="" /></a></li>
+      <li>性别: <img src="/images/icon_minigender_1.gif" title="男"/></li>      <li>文章: 213</li>
+      <li>积分: 360</li>
+      <li>来自: 珠海</li>
+      <li><img src='/images/status/offline.gif'/></li>
+    </ul>
+  </td>
+  <td class="postcontent">
+    <div class="postactions">
+      <div class="description">
+        &nbsp;&nbsp;
+        发表时间：2008-07-25&nbsp;&nbsp;
+        
+      </div>
+      <div class="links">
+        
+        
+          
+          
+          
+        
+      </div>
+    </div>
+    <div class="postbody clearfix">
+      
+      
+      <div class="quote_title">40020072 写道</div><div class="quote_div">想问一下楼主，rapid-framework大概什么时候发布呢，很期待啊，等3天了 ~</div><br /><br />计划下周发布吧,大家多多关注,是我继续开发的动力. <br /><img src="/images/smiles/icon_biggrin.gif" /> 
+    </div>
+    
+
+            </td>
+  </tr>
+  <tr>
+    <td class="postauthor"><a href="#">返回顶楼</a></td>
+    <td class="postcontent">
+      <div class="icons">
+        <a href='http://badqiu.iteye.com' class='icon_www' title='浏览作者的博客'>&nbsp;</a>
+        <a href='http://badqiu.iteye.com/blog/profile' class='icon_profile' title='浏览作者资料'>&nbsp;</a>
+        <a href="http://my.iteye.com/messages/new?message%5Breceiver_name%5D=badqiu" class="icon_pm" title="发送站内短信">&nbsp;</a>
+        <a href='http://badqiu.iteye.com/blog/guest_book' class='icon_guestbook' title='给作者留言'>&nbsp;</a>
+        <a href="http://my.iteye.com/feed?subscription%5Bsubscribed_user_name%5D=badqiu" class="icon_rss" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'fg+dl8+KS0u7NhRGQAmXdisB2EzBl1Qda/AvPoSZ14g='); f.appendChild(s);f.submit();return false;" title="关注作者">&nbsp</a>
+                  <a href="#611539" title="badqiu回帖:最适合实际开发需要的:&lt;代码生成器&gt;发布:rapid-generator-v1.0">回帖地址</a>
+              </div>
+                        <div id='post_rate_box_611539' class='post_rate_box'><a href='#' onclick='return false;' class='good' title='好'>0</a> <a href='#' onclick='return false;' class='hidden' title='差'>1</a> 请登录后投票</div>              </td>
+</tr>
+<tr class="sep2"><td colspan="2"></td></tr>
+<tr id="614255">
+  <td class="postauthor">
+    <ul>
+      <li class="name">penghao122</li>
+      <li>等级: 初级会员</li>
+      <li><a href='http://penghao122.iteye.com' target='_blank'><img alt="penghao122的博客" class="logo" src="http://www.iteye.com/upload/logo/user/28200/3a78d6f7-704f-35dc-aeb0-25d3d458fe1f.jpg?1236833021" title="penghao122的博客: penghao122" width="" /></a></li>
+      <li>性别: <img src="/images/icon_minigender_1.gif" title="男"/></li>      <li>文章: 177</li>
+      <li>积分: 50</li>
+      <li>来自: 广东珠海</li>
+      <li><img src='/images/status/offline.gif'/></li>
+    </ul>
+  </td>
+  <td class="postcontent">
+    <div class="postactions">
+      <div class="description">
+        &nbsp;&nbsp;
+        发表时间：2008-07-29&nbsp;&nbsp;
+        
+      </div>
+      <div class="links">
+        
+        
+          
+          
+          
+        
+      </div>
+    </div>
+    <div class="postbody clearfix">
+      
+      
+      <img src="/images/smiles/icon_smile.gif" /> 不知道这个框架怎么样。。下载下来测试一下
+    </div>
+    
+
+            </td>
+  </tr>
+  <tr>
+    <td class="postauthor"><a href="#">返回顶楼</a></td>
+    <td class="postcontent">
+      <div class="icons">
+        <a href='http://penghao122.iteye.com' class='icon_www' title='浏览作者的博客'>&nbsp;</a>
+        <a href='http://penghao122.iteye.com/blog/profile' class='icon_profile' title='浏览作者资料'>&nbsp;</a>
+        <a href="http://my.iteye.com/messages/new?message%5Breceiver_name%5D=penghao122" class="icon_pm" title="发送站内短信">&nbsp;</a>
+        <a href='http://penghao122.iteye.com/blog/guest_book' class='icon_guestbook' title='给作者留言'>&nbsp;</a>
+        <a href="http://my.iteye.com/feed?subscription%5Bsubscribed_user_name%5D=penghao122" class="icon_rss" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'fg+dl8+KS0u7NhRGQAmXdisB2EzBl1Qda/AvPoSZ14g='); f.appendChild(s);f.submit();return false;" title="关注作者">&nbsp</a>
+                  <a href="#614255" title="penghao122回帖:最适合实际开发需要的:&lt;代码生成器&gt;发布:rapid-generator-v1.0">回帖地址</a>
+              </div>
+                        <div id='post_rate_box_614255' class='post_rate_box'><a href='#' onclick='return false;' class='good' title='好'>0</a> <a href='#' onclick='return false;' class='hidden' title='差'>1</a> 请登录后投票</div>              </td>
+</tr>
+<tr class="sep2"><td colspan="2"></td></tr>
+<tr id="614882">
+  <td class="postauthor">
+    <ul>
+      <li class="name">jasongreen</li>
+      <li>等级: <img src="/images/star2.gif" alt="二星会员" title="二星会员"/></li>
+      <li><a href='http://jasongreen.iteye.com' target='_blank'><img alt="jasongreen的博客" class="logo" src="http://www.iteye.com/upload/logo/user/489640/dab6a551-de84-3a3f-877a-b8afa9aa67d4.png?1306636844" title="jasongreen的博客: 桂林的博客" width="" /></a></li>
+      <li>性别: <img src="/images/icon_minigender_1.gif" title="男"/></li>      <li>文章: 923</li>
+      <li>积分: 280</li>
+      <li>来自: 安徽</li>
+      <li><img src='/images/status/offline.gif'/></li>
+    </ul>
+  </td>
+  <td class="postcontent">
+    <div class="postactions">
+      <div class="description">
+        &nbsp;&nbsp;
+        发表时间：2008-07-29&nbsp;&nbsp;
+        
+      </div>
+      <div class="links">
+        
+        
+          
+          
+          
+        
+      </div>
+    </div>
+    <div class="postbody clearfix">
+      
+      
+      我曾经也打算写这样一个代码生成器框架，现在代码找不到了。用的是velocity。在合并既有配置文件时遇到了问题，放弃了，（需要在现有配置文件中插入模板，很麻烦），不知道楼主是怎么解决的，比如struts.xml
+    </div>
+    
+
+            </td>
+  </tr>
+  <tr>
+    <td class="postauthor"><a href="#">返回顶楼</a></td>
+    <td class="postcontent">
+      <div class="icons">
+        <a href='http://jasongreen.iteye.com' class='icon_www' title='浏览作者的博客'>&nbsp;</a>
+        <a href='http://jasongreen.iteye.com/blog/profile' class='icon_profile' title='浏览作者资料'>&nbsp;</a>
+        <a href="http://my.iteye.com/messages/new?message%5Breceiver_name%5D=jasongreen" class="icon_pm" title="发送站内短信">&nbsp;</a>
+        <a href='http://jasongreen.iteye.com/blog/guest_book' class='icon_guestbook' title='给作者留言'>&nbsp;</a>
+        <a href="http://my.iteye.com/feed?subscription%5Bsubscribed_user_name%5D=jasongreen" class="icon_rss" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'fg+dl8+KS0u7NhRGQAmXdisB2EzBl1Qda/AvPoSZ14g='); f.appendChild(s);f.submit();return false;" title="关注作者">&nbsp</a>
+                  <a href="#614882" title="jasongreen回帖:最适合实际开发需要的:&lt;代码生成器&gt;发布:rapid-generator-v1.0">回帖地址</a>
+              </div>
+                        <div id='post_rate_box_614882' class='post_rate_box'><a href='#' onclick='return false;' class='good' title='好'>3</a> <a href='#' onclick='return false;' class='hidden' title='差'>1</a> 请登录后投票</div>              </td>
+</tr>
+<tr class="sep2"><td colspan="2"></td></tr>
+<tr id="614990">
+  <td class="postauthor">
+    <ul>
+      <li class="name">badqiu</li>
+      <li>等级: <img src="/images/star3.gif" alt="三星会员" title="三星会员"/></li>
+      <li><a href='http://badqiu.iteye.com' target='_blank'><img alt="badqiu的博客" class="logo" src="http://www.iteye.com/upload/logo/user/19652/c33e91ec-b367-47b3-98ed-755c0628471a.gif?1236832477" title="badqiu的博客: badqiu" width="" /></a></li>
+      <li>性别: <img src="/images/icon_minigender_1.gif" title="男"/></li>      <li>文章: 213</li>
+      <li>积分: 360</li>
+      <li>来自: 珠海</li>
+      <li><img src='/images/status/offline.gif'/></li>
+    </ul>
+  </td>
+  <td class="postcontent">
+    <div class="postactions">
+      <div class="description">
+        &nbsp;&nbsp;
+        发表时间：2008-07-29&nbsp;&nbsp;
+        
+      </div>
+      <div class="links">
+        
+        
+          
+          
+          
+        
+      </div>
+    </div>
+    <div class="postbody clearfix">
+      
+      
+      <div class="quote_title">jasongreen 写道</div><div class="quote_div">我曾经也打算写这样一个代码生成器框架，现在代码找不到了。用的是velocity。在合并既有配置文件时遇到了问题，放弃了，（需要在现有配置文件中插入模板，很麻烦），不知道楼主是怎么解决的，比如struts.xml</div><br /><br />你可以看insert_demo目录的内容.<br /><br />模板输出生成的地方已经有该<strong><span style="color: red;">同名的文件</span></strong>存在,并且文件中有包含"webapp-generator-insert-location"标记,则模板生成的内容会插入在该标记之后.
+    </div>
+    
+
+            </td>
+  </tr>
+  <tr>
+    <td class="postauthor"><a href="#">返回顶楼</a></td>
+    <td class="postcontent">
+      <div class="icons">
+        <a href='http://badqiu.iteye.com' class='icon_www' title='浏览作者的博客'>&nbsp;</a>
+        <a href='http://badqiu.iteye.com/blog/profile' class='icon_profile' title='浏览作者资料'>&nbsp;</a>
+        <a href="http://my.iteye.com/messages/new?message%5Breceiver_name%5D=badqiu" class="icon_pm" title="发送站内短信">&nbsp;</a>
+        <a href='http://badqiu.iteye.com/blog/guest_book' class='icon_guestbook' title='给作者留言'>&nbsp;</a>
+        <a href="http://my.iteye.com/feed?subscription%5Bsubscribed_user_name%5D=badqiu" class="icon_rss" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'fg+dl8+KS0u7NhRGQAmXdisB2EzBl1Qda/AvPoSZ14g='); f.appendChild(s);f.submit();return false;" title="关注作者">&nbsp</a>
+                  <a href="#614990" title="badqiu回帖:最适合实际开发需要的:&lt;代码生成器&gt;发布:rapid-generator-v1.0">回帖地址</a>
+              </div>
+                        <div id='post_rate_box_614990' class='post_rate_box'><a href='#' onclick='return false;' class='good' title='好'>0</a> <a href='#' onclick='return false;' class='hidden' title='差'>1</a> 请登录后投票</div>              </td>
+</tr>
+<tr class="sep2"><td colspan="2"></td></tr>
+<tr id="686957">
+  <td class="postauthor">
+    <ul>
+      <li class="name">longlongriver</li>
+      <li>等级: 初级会员</li>
+      <li><a href='http://longlongriver.iteye.com' target='_blank'><img alt="longlongriver的博客" class="logo" src="http://www.iteye.com/images/user-logo.gif?1324994303" title="longlongriver的博客: " width="" /></a></li>
+      <li>性别: <img src="/images/icon_minigender_1.gif" title="男"/></li>      <li>文章: 77</li>
+      <li>积分: 50</li>
+      <li>来自: 北京</li>
+      <li><img src='/images/status/offline.gif'/></li>
+    </ul>
+  </td>
+  <td class="postcontent">
+    <div class="postactions">
+      <div class="description">
+        &nbsp;&nbsp;
+        发表时间：2008-10-06&nbsp;&nbsp;
+        
+      </div>
+      <div class="links">
+        
+        
+          
+          
+          
+        
+      </div>
+    </div>
+    <div class="postbody clearfix">
+      
+      
+      呵呵，一直很佩服badqiu老兄的创新精神，其主导的几个开源项目也非常不错，充分体现了软件开发简洁、实用至上的精神！我现在就一直在用着他的rapid-validation项目的成果！<br /><br />这个东西也非常的不错哦，大家可以在这个代码生成器的基础上制作自己的模板，相信能大大降低重复开发的工作量！<br /><br />
+    </div>
+    
+
+            </td>
+  </tr>
+  <tr>
+    <td class="postauthor"><a href="#">返回顶楼</a></td>
+    <td class="postcontent">
+      <div class="icons">
+        <a href='http://longlongriver.iteye.com' class='icon_www' title='浏览作者的博客'>&nbsp;</a>
+        <a href='http://longlongriver.iteye.com/blog/profile' class='icon_profile' title='浏览作者资料'>&nbsp;</a>
+        <a href="http://my.iteye.com/messages/new?message%5Breceiver_name%5D=longlongriver" class="icon_pm" title="发送站内短信">&nbsp;</a>
+        <a href='http://longlongriver.iteye.com/blog/guest_book' class='icon_guestbook' title='给作者留言'>&nbsp;</a>
+        <a href="http://my.iteye.com/feed?subscription%5Bsubscribed_user_name%5D=longlongriver" class="icon_rss" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'fg+dl8+KS0u7NhRGQAmXdisB2EzBl1Qda/AvPoSZ14g='); f.appendChild(s);f.submit();return false;" title="关注作者">&nbsp</a>
+                  <a href="#686957" title="longlongriver回帖:最适合实际开发需要的:&lt;代码生成器&gt;发布:rapid-generator-v1.0">回帖地址</a>
+              </div>
+                        <div id='post_rate_box_686957' class='post_rate_box'><a href='#' onclick='return false;' class='good' title='好'>0</a> <a href='#' onclick='return false;' class='hidden' title='差'>0</a> 请登录后投票</div>              </td>
+</tr>
+<tr class="sep2"><td colspan="2"></td></tr>
+
+  </tbody>
+</table>
+
+
+<div class="actions">
+  <div class="buttons"></div>
+  <div class="wrapper"></div>
+</div>
+
+<div>
+  <div class="crumbs">
+    <a href="/forums">论坛首页</a> <span class="arrow">&rarr;</span>
+    <a href="/forums/board/Java">Java企业应用版</a>
+    <br/><br/>跳转论坛:<select id="forum_urlname" name="forum[urlname]" onchange="window.location='/forums/board/'+this.value"><option value="mobile">移动开发技术</option>
+<option value="web">Web前端技术</option>
+<option value="Java" selected="selected">Java企业应用</option>
+<option value="language">编程语言技术</option>
+<option value="Tech">综合技术</option>
+<option value="New">入门技术</option>
+<option value="Job">招聘求职</option>
+<option value="Life">海阔天空</option></select>
+    
+  </div>
+
+  
+</div>
+
+<div style="display:none">
+  <form action="/posts/rate" id="post_rate_form" method="post" onsubmit="new Ajax.Request('/posts/rate', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="fg+dl8+KS0u7NhRGQAmXdisB2EzBl1Qda/AvPoSZ14g=" /></div>
+    <input type="hidden" id="post_rate_id" name="id"/>
+    <input type="hidden" id="post_rate_type" name="type"/>
+  </form></div>
+
+<script type="text/javascript">
+  function processComment() {
+    fix_image_size($$('div.postbody img'), 760);
+    
+    $$('#forum_main > #posts > tr[id]').each(function(tr){
+      var post_id = tr.id;
+      $$("#"+post_id+" pre[name=code]").each(function(pre, index){
+        var location = window.location;
+        source_url = location.protocol + "//" + location.host + location.pathname + location.search;
+        source_url += "#" + post_id;
+        pre.writeAttribute('codeable_type', 'Post');
+        pre.writeAttribute('codeable_id', post_id);
+        pre.writeAttribute('source_url', source_url);
+        pre.writeAttribute('pre_index', index);
+        pre.writeAttribute('title', '最适合实际开发需要的:<代码生成器>发布:rapid-generator-v1.0');
+      });
+    });
+  }
+
+  dp.SyntaxHighlighter.HighlightAll('code', true, true);
+  processComment();
+  code_favorites_init();
+
+  function rate_post(id, type) {
+    Element.update('post_rate_box_' + id, '提交中...');
+    new Ajax.Request('/posts/rate', {asynchronous:true, evalScripts:true, parameters:{"id":id, "type":type}});
+  }
+
+  function rate_topic(type) {
+    Element.update('topic_rate_box', '提交中...');
+    new Ajax.Request('/topics/rate', {asynchronous:true, evalScripts:true, parameters:{"id":217423, "type":type}});
+  }
+</script>
+
+
+
+        </div>
+        <div id="nav">
+  <div class="wrapper">
+    <ul>
+            <li><a href="http://www.iteye.com/">首页</a></li>
+      <li><a href="http://www.iteye.com/news">资讯</a></li>
+      <li><a href="http://www.iteye.com/magazines">精华</a></li>
+      <li><a href="http://www.iteye.com/forums" class='selected'>论坛</a></li>
+      <li><a href="http://www.iteye.com/ask">问答</a></li>
+      <li><a href="http://www.iteye.com/blogs">博客</a></li>
+      <li><a href="http://www.iteye.com/blogs/subjects">专栏</a></li>
+      <li><a href="http://www.iteye.com/groups">群组</a></li>
+      <!-- <li><a target="_blank" href="http://job.iteye.com/iteye">招聘</a></li>-->
+      <li><a target="_blank" href="http://job.csdn.net/">招聘</a></li>
+      <li class="last"><a href="http://www.iteye.com/search">搜索</a></li>
+    </ul>
+  </div>
+</div>
+      </div>
+      <div id="footer">
+  <div id="site_nav">
+    <ul>
+      <li><a href="/index/service">广告服务</a></li>
+      <li><a href="http://webmaster.iteye.com">ITeye黑板报</a></li>
+      <li><a href="/index/contactus">联系我们</a></li>
+      <li class="last"><a href="/index/friend_links">友情链接</a></li>
+    </ul>
+  </div>
+  <div id="copyright">
+    &copy; 2003-2015 ITeye.com.    [ <a href="http://www.miibeian.gov.cn">京ICP证110151号</a>  京公网安备110105010620 ]<br/>
+    百联优力(北京)投资有限公司  版权所有<br />
+  </div>
+</div>
+
+    </div>
+    <script type="text/javascript">
+  document.write("<img src='http://stat.iteye.com/?url="+ encodeURIComponent(document.location.href) + "&referrer=" + encodeURIComponent(document.referrer) + "&user_id=' width='0' height='0' />");
+</script>
+
+<script src="http://csdnimg.cn/pubfooter/js/tracking.js?version=20130923164150" type="text/javascript"></script>
+
+  </body>
+</html>
