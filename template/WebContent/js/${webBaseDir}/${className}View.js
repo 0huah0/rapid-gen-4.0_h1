@@ -51,40 +51,7 @@ ${className}View = Ext.extend(Ext.Panel, {
 				xtype : 'fieldset',
 				title : '會計科目查詢',
 				layout : 'form',
-				items : [{
-					layout : 'column',
-					columnWidth : 0.3,
-					defaults : {
-						layout : 'form',
-						padding : '0 0 0 40px',
-						labelAlign:'right',
-						labelWidth:80,
-						defaults : {
-							xtype : 'textfield',
-							width : 140
-						}
-					},
-					items : [{
-								items : [{
-											fieldLabel : '科目代號',
-											name : 'Q_code_S_LK'
-										}]
-							}, {
-								items : [{
-											fieldLabel : '科目名稱',
-											name : 'Q_name_S_LK'
-										}]
-							}, {
-								items : [{
-									xtype:'hidden',
-									id:'parent_parentId',
-									name:'Q_parent.id_L_EQ'
-								},new TreeSelector(
-										'actTreeSelector',
-										__ctxPath + '/act/tree${className}.do?Q_=',
-										'父類科目', 'parent_parentId', true)]
-							}]
-				}]
+				items : []
 			}]
 		});
 		this.store = new Ext.data.JsonStore({
@@ -102,32 +69,13 @@ ${className}View = Ext.extend(Ext.Panel, {
 					}
 				});
 		var cm = new Ext.grid.ColumnModel({
-			columns : [new Ext.grid.RowNumberer(), {
-						header : '科目代號',
-						dataIndex : 'code'
-					}, {
-						header : '科目名稱',
-						width : 120,
-						dataIndex : 'name'
-					}, {
-						header : "英文名稱",
-						width : 120,
-						dataIndex : 'nameEn'
-					}, {
-						header : '父類科目',
-						width : 120,
-						dataIndex : 'parName'
-					}, {
-						header : "新增日期",
-						dataIndex : 'createDate'
-					}, {
-						header : "修改日期",
-						dataIndex : 'updateDate'
-					}, {
-						header : "備註",
-						id:'remark1',
-						dataIndex : 'remark'
-					}, {
+			columns : [new Ext.grid.RowNumberer(),{
+			           <#list table.notPkColumns as c>
+							header : '${c.columnAlias}',
+							width : 120,
+							dataIndex : '${c.enumClassName}'
+						},{
+					</#list>
 						header : '管理',
 						dataIndex : 'id',
 						renderer : function(v,m,r) {

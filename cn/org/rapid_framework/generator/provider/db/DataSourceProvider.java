@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.SQLFeatureNotSupportedException;
+import java.util.Properties;
 import java.util.logging.Logger;
 
 import javax.naming.Context;
@@ -104,7 +105,13 @@ public class DataSourceProvider {
 		}
 
 		public Connection getConnection(String username, String password) throws SQLException {
-			return DriverManager.getConnection(url,username,password);
+			  Properties localProperties = new Properties();
+		      localProperties.put("user",username );
+		      localProperties.put("password", password);
+		      localProperties.put("remarksReporting","true");  
+	            // !!! MySQL 标志位, 获取TABLE元数据 REMARKS 信息  
+		      localProperties.put("useInformationSchema","true");  
+			return DriverManager.getConnection(url,localProperties);
 		}
 
 		public PrintWriter getLogWriter() throws SQLException {

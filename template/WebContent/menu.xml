@@ -1,0 +1,5 @@
+﻿<#assign className = table.className>   
+
+<Items id="${className}" text="${className?upper_case}" iconCls="menu-plantype" isPublic="false">
+	<Item id="${className}Mgmt" text="${className?upper_case}管理" iconCls="menu-holidayRecord"/>
+</Items>generator-insert-location

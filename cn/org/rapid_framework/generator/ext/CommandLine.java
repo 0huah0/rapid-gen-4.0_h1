@@ -70,7 +70,11 @@ public class CommandLine {
 	}
 	
 	private static String getTemplateRootDir() {
-		return System.getProperty("templateRootDir", "template");
+		String templateRootDir = GeneratorProperties.getRequiredProperty("templateRootDir");
+		if(templateRootDir==null || "".equals(templateRootDir)){
+			templateRootDir = System.getProperty("templateRootDir", "template");
+		}
+		return templateRootDir;
 	}
 
 	private static void printUsages() {

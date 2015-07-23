@@ -1,0 +1,6 @@
+<#assign className = table.className>   
+<#assign classNameLower = className?uncap_first> 
+
+	<action name="*${className}" class="${classNameLower}Action" method="{1}">
+			<result>${r'${successResultValue}'}</result>
+	</action>generator-insert-location

@@ -19,7 +19,7 @@
 	/>
 </数据库表名>
  -->
-<${table.sqlName} className="${className}" tableAlias="${table.tableAlias}" >
+<${table.sqlName} className="${className}" tableAlias="${table.tableAlias}" remarks="${table.remarks}">
 <#list table.notPkColumns as c>
 	<${c.sqlName} columnAlias="${c.columnAlias}"
 		javaType="${c.simpleJavaType}" 
