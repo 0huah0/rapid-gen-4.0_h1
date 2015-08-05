@@ -182,37 +182,48 @@ ${className}View = Ext.extend(Ext.Panel, {
 //view static method
 ${className}View.remove = function(id) {
 	var grid = Ext.getCmp("${className}Grid");
-	Ext.Msg.confirm('刪除確認', '確定要刪除此筆數據？', function(btn) {
-		if (btn == 'yes') {
-			Ext.Ajax.request({
-				url : __ctxPath
-						+ '/pss/multiDel${className}.do',
-				params : {
-					ids : id
-				},
-				method : 'post',
-				success : function(response, options) {
-					var dbJson = eval("(" + response.responseText + ")");
-					if(dbJson.success){
-						Ext.ux.Toast.msg("信息", "成功刪除！");
-						grid.getStore().reload({
-							params : {
-								start : 0,
-								limit : 25
+	if(id && id != 'undefind'){	//后台删
+			Ext.Msg.confirm('刪除確認', '確定要刪除此筆數據？', function(btn) {
+				if (btn == 'yes') {
+					Ext.Ajax.request({
+						url : __ctxPath
+								+ '/pss/multiDel${className}.do',
+						params : {
+							ids : id
+						},
+						method : 'post',
+						success : function(response, options) {
+							var dbJson = eval("(" + response.responseText + ")");
+							if(dbJson.success){
+								Ext.ux.Toast.msg("信息", "成功刪除！");
+								grid.getStore().reload({
+									params : {
+										start : 0,
+										limit : 25
+									}
+								});
+							}else{
+								Ext.Msg.alert("信息", "該項沒能被刪除！");
 							}
-						});
-					}else{
-						Ext.Msg.alert("信息", "該項沒能被刪除！");
-					}
+						}
+					});
 				}
 			});
-		}
-	});
+	}else{	//前台删
+		
+	}
 };
 
 ${className}View.edit = function(id) {
 	new ${className}Form({
 				recId : id
+			}).show();
+};
+
+${className}View.read = function(id) {
+	new ${className}Form({
+				recId : id,
+				read : true
 			}).show();
 };
 

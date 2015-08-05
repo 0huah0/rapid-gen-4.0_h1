@@ -41,7 +41,12 @@
 					</#if>
 			</#if>
 	</#if>
-	<#return 'name : "${classNameLower}.${c.columnNameLower}"'/>
+	<#if 'Query'==isQuery>
+			<#return 'name : "Q_${c.columnNameLower}_${javaType2qm(c.javaType)}"'/>
+	<#else>
+			<#return 'name : "${classNameLower}.${c.columnNameLower}"'/>
+	</#if>
+	
 </#function>
 
 <#-- 3、将remarks转化为renderer方法-->

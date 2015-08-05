@@ -11,16 +11,16 @@ ${className}Form = Ext.extend(Ext.Window, {
 					id : '${className}FormWin',
 					title : this.recId?'修改${table.remarks}':'新增${table.remarks}',
 					iconCls : 'menu-planmanage',
-					width : 820,
-					autoHeight : true,
+					width : 960,
 					buttons : this.buttons
 				});
 	},
 	initUIComponents : function() {
 		var recId = this.recId;
+		var readOnly = this.read;
+		
 		this.formPanel = new Ext.FormPanel({
 			id : '${className}Form',
-			autoHeight:true,
 			frame : true,
 			items : [{
 					layout : 'column',
@@ -33,6 +33,7 @@ ${className}Form = Ext.extend(Ext.Window, {
 						defaults : {
 							xtype : 'textfield',
 							allowBlank : false,
+							disabled : readOnly,
 							maxLength:100,
 							width : 200
 						}
