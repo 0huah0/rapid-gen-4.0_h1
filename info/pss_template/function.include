@@ -1,0 +1,91 @@
+<#-- 本文件包含一些公共的函数,本文件会被其它模板自动include -->
+<#assign className = table.className>   
+<#assign classNameLower = className?uncap_first> 
+<#list table.columns as c>
+    <#if !pkColumn?? && c.pk >
+				<#assign pkColumn = c />
+    </#if>
+</#list>
+
+<#-- 1、取得对应类型的查询方式-->
+<#function javaType2qm javaType>
+  <#if javaType=='java.lang.String'>
+		<#return 'S_LK'>
+	<#elseif javaType=='java.lang.Integer'>
+		<#return 'N_EQ'>
+	<#elseif javaType=='java.util.Date'>
+		<#return 'D_DL'>
+	<#elseif javaType=='java.lang.Long' || javaType=='Long'>
+		<#return 'L_EQ'/>
+	</#if>
+</#function>
+
+<#-- 2、将remarks转换为store数组 -->
+<#function getComboStore remarks c isQuery>
+	<#if remarks??>
+			<#local start = remarks?index_of('【')/>
+			<#local end = remarks?index_of('】')/>
+			<#if start gt 0 && end gt start>
+					<#local remark = remarks?substring(start+1,end)/>
+					<#if remark??>
+						<#if 'Query'==isQuery>
+								<#local nameStr = 'hiddenName:"Q_${c.columnNameLower}_${javaType2qm(c.javaType)}"'/>
+						<#else>
+								<#local nameStr = 'hiddenName:"${classNameLower}.${c.columnNameLower}"'/>
+						</#if>
+						<#return nameStr+',mode:"local",triggerAction:"all",xtype:"combo",store:[['+remark?replace('、','"],[')?replace('：',',"')+'"]]'/> 
+					</#if>
+			<#else>
+					<#if c.columnNameLower=='createBy' ||c.columnNameLower=='updateBy' ||c.columnNameLower=='createDate' ||c.columnNameLower=='updateDate' >
+							<#return 'xtype:"hidden",name : "${classNameLower}.${c.columnNameLower}"'/>
+					</#if>
+			</#if>
+	</#if>
+	<#return 'name : "${classNameLower}.${c.columnNameLower}"'/>
+</#function>
+
+<#-- 3、将remarks转化为renderer方法-->
+<#function doRendererStr remarks c>
+	<#if remarks??>
+			<#local start = remarks?index_of('【')/>
+			<#local end = remarks?index_of('】')/>
+			
+			<#--combo-->
+			<#if start gt 0 && end gt start>
+					<#local remark = remarks?substring(start+1,end)/>
+					<#if remark??>
+						<#local retStr = ',renderer:function(v){'/>
+						<#list remark?split('、') as item>
+								<#local arr = item?split('：')/>
+								<#if item_index == 0>
+										<#local retStr = retStr+'if(${arr[0]} == v){return "${arr[1]}";}'/>
+								<#else>
+										<#local retStr = retStr+'else if(${arr[0]} == v){return "${arr[1]}";}'/>
+								</#if>
+						</#list>
+						<#return retStr+'}'/>
+					</#if>
+			<#else>
+					<#--date-->
+					<#if c.columnNameLower=='createDate' ||c.columnNameLower=='updateDate' >
+							<#return ',renderer:function(v){if(v){return new Date(v).format("Y-m-d H:i");}else{return "";}}'/>
+					</#if>
+			</#if>
+	</#if>
+	<#return ''/>
+</#function>
+
+
+<#-- 3、将remarks转化为renderer方法-->
+<#function getFieldName remarks>
+	<#if remarks??>
+			<#local start = remarks?index_of('【')/>
+			<#if start gt 0>
+				<#return remarks?substring(0,start)/>
+			<#else>
+				<#return remarks/>
+			</#if>
+	<#else>
+			<#return ''/>
+	</#if>
+</#function>

@@ -1,0 +1,6 @@
+<#assign className = table.className>   
+<#assign classNameLower = className?uncap_first> 
+<#assign basepackageDir = basepackage_dir?replace('/','.')> 
+	<bean id="${classNameLower}Service" class="${basepackageDir}.service.impl.${className}ServiceImpl">
+		<constructor-arg index="0" ref="${classNameLower}Dao"/>
+	</bean>generator-insert-location

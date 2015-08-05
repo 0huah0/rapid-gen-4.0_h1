@@ -1,0 +1,5 @@
+<#assign className = table.className>   
+<#assign classNameLower = className?uncap_first> 
+
+	<bean id="${classNameLower}Dao" class="${basepackage_dir}.dao.impl.${className}DaoImpl" parent="baseDao"/>
+	generator-insert-location

@@ -1,0 +1,11 @@
+﻿<#assign className = table.className>   
+
+
+<Items id="${className}" text="${table.remarks}" iconCls="menu-plantype" isPublic="false">
+	<Item id="${className}View" text="${table.remarks}管理" iconCls="menu-holidayRecord">
+			<Function id="_${className}Edit" text="可編輯" iconCls="btn-edit">
+				<url>/pss/save${className}.do</url>
+				<url>/pss/multiDel${className}.do</url>
+			</Function>
+	</Item>
+</Items>generator-insert-location

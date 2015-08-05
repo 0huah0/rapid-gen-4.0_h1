@@ -1,0 +1,4 @@
+	<#assign className = table.className>   
+<#assign classNameLower = className?uncap_first> 
+	<bean id="${classNameLower}Action" class="${basepackage_dir}.action.${className}Action" scope="prototype" />
+	generator-insert-location
